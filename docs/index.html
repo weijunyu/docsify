@@ -19,6 +19,108 @@
 		nav.app-nav li ul {
 			min-width: 100px;
 		}
+
+		/* CarbonAds starts here */
+		#carbonads {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+				Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+				sans-serif;
+		}
+
+		#carbonads {
+			display: flex;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			max-width: 150px;
+			background-color: hsl(0, 0%, 98%);
+			box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+			z-index: 100;
+		}
+
+		#carbonads a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		#carbonads a:hover {
+			color: inherit;
+		}
+
+		#carbonads span {
+			position: relative;
+			display: block;
+			overflow: hidden;
+		}
+
+		#carbonads .carbon-wrap {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.carbon-img {
+			display: block;
+			margin: 0;
+			line-height: 1;
+		}
+
+		.carbon-img img {
+			display: block;
+			max-width: 100% !important;
+		}
+
+		.carbon-text {
+			font-size: 13px;
+			padding: 10px;
+			line-height: 1.5;
+			text-align: left;
+		}
+
+		.carbon-poweredby {
+			display: block;
+			padding: 8px 10px;
+			background: repeating-linear-gradient(-45deg,
+				transparent,
+				transparent 5px,
+				hsla(0, 0%, 0%, 0.025) 5px,
+				hsla(0, 0%, 0%, 0.025) 10px) hsla(203, 11%, 95%, 0.4);
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			font-weight: 600;
+			font-size: 9px;
+			line-height: 1;
+		}
+
+		@media only screen and (min-width: 320px) and (max-width: 759px) {
+			#carbonads {
+				float: none;
+				margin: 20px 0;
+				max-width: 330px;
+			}
+
+			#carbonads .carbon-wrap {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.carbon-img {
+				display: block;
+				margin-bottom: 8px;
+				max-width: 130px;
+				line-height: 1;
+			}
+
+			.carbon-img img {
+				display: block;
+				margin: 0 auto;
+				max-width: 130px;
+				width: 130px;
+				height: auto;
+			}
+		}
+
+		/* CarbonAds ends here */
 	</style>
 </head>
 
@@ -92,21 +194,18 @@
         }
       ]
     }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/matomo.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
-  <script>
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'docsifyjs/Lobby'
-  };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+	</script>
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/matomo.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
+	<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CEBI6KQE&placement=docsifyjsorg"
+		id="_carbonads_js"></script>
+
 </body>
 
 </html>
